@@ -1,17 +1,27 @@
 * {
   margin: 0px;
   padding: 0px;
-  background-color: black;
+}
+body {
+  background-color: #08aeea;
+  background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Container {
+  transform: translateY(15%);
+  
 }
 
 #AContainer {
   position: relative;
-  margin: 50px auto;
+  margin: auto;
   height: 60vh;
   width: 60vh;
   background: url(../IMG/clock.png) no-repeat;
-  background-color: rgba(128, 128, 128, 0.438);
-  border: 4px solid #55ACEE;
+  background-color: rgba(0, 0, 0, 0.513);
+  border: 4px solid #55acee;
   border-radius: 119px;
   background-size: 100%;
 }
@@ -47,14 +57,28 @@
 }
 
 #Dclock {
-  height: 150px;
+  height: 50%;
   background-color: white;
-  padding: 5px 20px;
-  width: 601px;
-  border: 5px solid #55ACEE;
+  font-size: 4rem;
+  padding: 1rem;
+  /* padding: 5px 20px; */
+  width: 40%;
+  border: 5px solid #55acee;
   text-align: center;
   align-items: center;
   border-radius: 25px;
   margin: auto;
-  font-size: 110px;
+}
+
+@media screen and (max-width: 500px) {
+  #AContainer {
+    height: 45vh;
+    width: 45vh;
+  }
+  #Dclock {
+    font-size: 2rem;
+    padding: 1rem;
+    /* padding: 5px 20px; */
+    width: 50%;
+  }
 }
